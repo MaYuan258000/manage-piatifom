@@ -91,10 +91,12 @@
            	    </div>
            </div>
 		</div>
-		 <div class="border-top colorRedd all-price-border colorCenter ">
+		 <div class="border-top colorRedd all-price-border colorCenter" v-show="cholist.length">
 		 	小计：￥{{allPrice}}
 		 </div>
-		 
+		 <div>
+		 	账户余额：￥{{myacount}}
+		 </div>
 		 <div class="flexBox bg odiContanin padding-left padding-right">
 		 	<div class="bgwhite1 center flex2 ">
 		 		     	<div class="checkbox marght-left12" 
@@ -104,7 +106,8 @@
 		 		
 		 		<span class="marght-left13">全选</span></div>
 		 	<div class="bgGray colorWhite flex2 center">移至收藏夹</div>
-		 	<div class="bgred colorWhite2 flex2 center">删除</div>
+		 	<div class="bgred colorWhite2 flex2 center" @click="deleteEvent">删除</div>
+		 	<div class="bgred colorWhite2 flex2 center" @click="payEvent">结账</div>
 		 </div>
 	</div>
 </template>
@@ -144,7 +147,8 @@
 					title: "哈哈哈"
 				}],
 				activeColor:'#ca3232',
-				isCheckedAll:false
+				isCheckedAll:false,
+//				acount:this.$store.state.acount
 			}
 		},
 		methods: {
@@ -177,7 +181,30 @@
 						this.cholist[i].isChecked=false
 					}
 				}
+			},
+			deleteEvent(){
+				//filter删除
+//			this.cholist=this.cholist.filter((item,index)=>{
+//					return (item.isChecked==false)
+//				})
+			  
+			    var arr=[]
+				for(var i=0;i<this.cholist.length;i++){
+					if(this.cholist[i].isChecked==false){
+						arr.push(this.cholist[i])
+					}
+				}
+				this.cholist=arr;
+		},
+		payEvent(){
+			var pay=0;
+			for(var i=0;i<this.cholist.length;i++){
+				if(this.cholist[i].isChecked==true){
+					pay+=this.cholist[i].num*this.cholist[i].price
+				}
 			}
+			this.$store.commit('checkout',pay)
+		}
 			
 		},
 		components: {
@@ -195,6 +222,9 @@
 					}
 				}
                 return allprice
+			},
+			myacount(){
+			return this.$store.state.acount	
 			}
 		}
 	}

@@ -14,7 +14,9 @@
 				<div class="ge1">&nbsp;&nbsp;&nbsp;我的收藏</div>
 			</div>
 				<div class="yue">
-				<div class="ge">&nbsp;&nbsp;&nbsp;我的余额</div>
+				<div class="ge">&nbsp;&nbsp;&nbsp;我的余额
+				<div style="margin-left: 190px; margin-top: -55px;color: red;">账户余额：￥{{acount}}</div>
+				</div>
 				<div class="ge1">&nbsp;&nbsp;&nbsp;我的订单</div>
 			</div>
 		<div class="she">
@@ -25,7 +27,13 @@
 				<div class="ge1">&nbsp;&nbsp;&nbsp;评价</div>
 			</div>
 		</div>
-   <Zong></Zong>
+		 <div style="margin-top: -150px;">
+		 	{{$store.state.title}}
+		 	{{$store.state.age}}
+		 	<button @click="setAge">设定年龄</button>
+		 	<button @click="setageAction">异步设定年龄</button>
+		 </div>
+<!--   <Zong></Zong>-->
 	</div>
 </template>
 
@@ -39,6 +47,20 @@
     },
     components:{
     	Zong
+    },
+    computed:{
+    	acount:function(){
+    		return this.$store.state.acount	
+    	}
+    },
+    methods:{
+    	setAge(){
+    		this.$store.commit('setAge',1)
+    	},
+    	//异步设置方式
+    	setageAction(){
+    		this.$store.dispatch('ageAction')
+    	}
     }
   }
 </script>

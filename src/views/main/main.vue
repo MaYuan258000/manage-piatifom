@@ -38,6 +38,25 @@
 			setIndex(index){
 				this.currentIndex=index
 			}
+		},
+		watch:{
+			$route:function(router){
+				if(router.path=='/main/goshoping'||router.path=='/main/shopcar'){
+					this.currentIndex=1
+				}
+				if(router.path=='/main/shopcar'){
+					this.currentIndex=2
+				}
+				if(router.path=='/main/goshoping'){
+					this.currentIndex=1
+				}
+				if(router.path=='/main/myshop'){
+					this.currentIndex=3
+				}
+				if(router.path=='/main/usercenter'){
+					this.currentIndex=4
+				}
+			}
 		}
 	}
 </script>
