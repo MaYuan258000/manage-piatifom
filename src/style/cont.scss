@@ -1,0 +1,159 @@
+
+@import "icon";
+@import "icon_1";
+@import "mimad";
+@import "btn";
+@import "fonSize";
+#app,.weapper,html,body{
+    width: 100%;
+    height: 100%;
+
+}
+html,body,p,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+//  background: #f1f1f1;
+}
+.flexBox{
+    display: flex;
+}
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}
+.flex3{
+    flex: 3;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexCol{
+    flex-direction: column;
+}
+.top{
+    width: 100%;
+    height: 5rem;
+    background: #ca3232;
+    display: flex;
+    justify-content: space-around;
+}
+.main{
+    width: 100%;
+  
+}
+.autoBox{
+    overflow: auto;
+}
+.initIput{
+    outline: none;
+    border: none;
+}
+.bgred{
+    background: #ca3232;
+}
+.colorWhite{
+    color: white;
+}
+.border{
+    border: 1px solid  #ca3232;
+}
+.bgBlack{
+    background: black;
+}
+.height20{
+    height: 200px;
+}
+    .text-center{
+        text-align: center;
+        margin-left: -30px;
+    }
+    .height21{
+        height: 150px;
+    }
+   .colorRedd{
+       color: #ca3232;
+   }
+   .margin-top15{
+       margin-top: 20px;
+       border-bottom: 1px solid #DDDDDD;
+   }
+      .margin-top16{
+       margin-top: 20px;
+   }
+        .margin-top16{
+       margin-top: 10px;
+   }
+   .bgwhite{
+       background: white;
+       color: black;
+       border-bottom: 1px solid #ca3232;
+   }
+   .bgwhite1{
+       background: white;
+       color: black; 
+   }
+   .colorWhite2{
+       background: #ff5400;
+       color: white;
+       text-align: center;
+   }
+   .bgGray{
+       background: #666666;
+   }
+   .borderBottom{
+      height: 30px;
+       border-bottom: 1px solid #CCCCCC;
+       display: flex;
+   }
+   .margin17{
+       margin: 10px;
+   }
+   .padding17{
+       padding: 10px;
+   }
+   
+ .padding-left{
+     padding-left: 10px;
+ }
+ .padding-right{
+     padding-right: 10px;
+ }
+ .imgDefault{
+     width: 100%;
+     height: 100%;
+ }
+ .marght-left10{
+     margin-left: 10px;
+ }
+ .marght-left11{
+     margin: 5px;
+ }
+.colorNote{
+    color: #DDDDDD;
+}
+.colorCenter{
+    align-items: center;
+    justify-content: center;
+}
+.bgwhite2{
+    width: 100%;
+    height: 100%;
+    background: gray;
+}
+.marght-left12{
+    margin-right: 85px;
+}
+.marght-left13{
+    position: absolute;
+}
+body{
+    background: #F1F1F1;
+}
+.bgwhite3{
+    background: white;
+}
