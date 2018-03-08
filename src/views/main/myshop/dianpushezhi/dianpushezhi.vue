@@ -7,7 +7,7 @@
 					<li>{{item.name}}</li>
 				</ul>
 				<span style="margin-right: 1rem; color: #DDDDDD;" @click="nameEvent">{{item.title}}</span>
-				<img :src="item.img" style="width: 10%; position: absolute; right: 1rem;" @click="centerDialogVisible1 = true">
+				<img :src="item.img" style="width: 10%; position: absolute; right: 1rem;" >
 			</div>
 			<p style="float: right; margin-top: -3rem; font-size: 30px;" @click="centerDialogVisible = true">></p>
 		</div>
@@ -23,7 +23,8 @@
 			<p style="text-align: center; margin-top: 0.5rem; color: #ca3232;">相册</p>
 			<p style="text-align: center; margin-top: 0.5rem; color: #000; position: absolute; top: 7rem; left: 0rem; background: white; width: 100%; border-radius: 5px; height: 40px; line-height: 40px;">相册</p>
 		</el-dialog>
-
+		
+		<el-button type="primary" @click="centerDialogVisible1 = true">点我有惊喜<i class="el-icon-upload el-icon--right"></i></el-button>
 	</div>
 </template>
 
@@ -72,8 +73,6 @@
 					this.goToNext('/dianpumingcheng')
 				} else if(index == 3) {
 					this.goToNext('/dianpujianjie')
-				} else if(index == 4) {
-					this.goToNext('dianpumingcheng')
 				}
 			},
 			nameEvent() {
