@@ -1,30 +1,28 @@
 <template>
-	<div id="oo">
 		<div class="wrapper flexBox flexCol">
-			<div class="flex1">
+			<div class="flex1 autoBox">
 				<router-view></router-view>
 			</div>
-			<div class="myTab flexBox">
+			<div class="navTab flexBox">
 				<div class="flex1 center flexBox flexCol" @click="setIndex(1)">
-					<img src="../../../static/img/gouwu.jpg" class="ww" v-show="currentIndex==1">
-					<img src="../../../static/img/gowuwu.jpg"  class="ww" v-show="currentIndex!=1">
-					<router-link to="/main/goshoping" class="odd2">购物</router-link>
+					<img src="../../../static/img/gouwu.jpg" class="thisIcon" v-show="currentIndex==1">
+					<img src="../../../static/img/gowuwu.jpg"  class="thisIcon" v-show="currentIndex!=1">
+					<router-link to="/main/goshoping" :class='{active:(currentIndex==1),notActive:(currentIndex!=1)}'>购物</router-link>
 				</div>
 				<div class="flex1 center flexBox flexCol" @click="setIndex(2)">
-			       <img src="../../../static/img/gouwuche1.jpg" class="ww" v-show="currentIndex==2">
-			       <img src="../../../static/img/shopcar.jpg" class="ww" v-show="currentIndex!=2">
-					<router-link class="odd2" to="/main/shopcar" >购物车</router-link></div>
+			       <img src="../../../static/img/gouwuche1.jpg" class="thisIcon" v-show="currentIndex==2">
+			       <img src="../../../static/img/shopcar.jpg" class="thisIcon" v-show="currentIndex!=2">
+					<router-link to="/main/shopcar" :class='{active:(currentIndex==2),notActive:(currentIndex!=2)}'>购物车</router-link></div>
 			   <div class="flex1  center flexBox flexCol" @click="setIndex(3)">
-			       <img src="../../../static/img/dianpu (2).jpg" class="ww" v-show="currentIndex==3">
-			       <img src="../../../static/img/dianpu.jpg" class="ww" v-show="currentIndex!=3">
-					<router-link class="odd2" to="/main/dianpu" >我的店铺</router-link></div>
+			       <img src="../../../static/img/dianpu (2).jpg" class="thisIcon" v-show="currentIndex==3">
+			       <img src="../../../static/img/dianpu.jpg" class="thisIcon" v-show="currentIndex!=3">
+					<router-link  to="/main/dianpu" :class='{active:(currentIndex==3),notActive:(currentIndex!=3)}'>我的店铺</router-link></div>
 			 <div class="flex1  center flexBox flexCol" @click="setIndex(4)">
-			       <img src="../../../static/img/username (2).jpg" class="ww" v-show="currentIndex==4">
-			       <img src="../../../static/img/username.jpg" class="ww" v-show="currentIndex!=4">
-					<router-link class="odd2" to="/main/usercenter" >个人中心</router-link></div>
+			       <img src="../../../static/img/username (2).jpg" class="thisIcon" v-show="currentIndex==4">
+			       <img src="../../../static/img/username.jpg" class="thisIcon" v-show="currentIndex!=4">
+					<router-link  to="/main/username" :class='{active:(currentIndex==4),notActive:(currentIndex!=4)}'>个人中心</router-link></div>
 			</div>
 		</div>
-	</div>
 </template>
 
 <script>
@@ -62,11 +60,15 @@
 </script>
 
 <style lang="scss" scoped>
-.myTab a.active{
-	color: #ca3232;
-}
-.myTab{
-	margin-left: -20px;
+  .thisIcon{
+    width: 25px;
+    height: 25px;
+  }
+
+.navTab{
+	height: 70px;
+	background: white;
+	z-index: 100;
 }
 .odd1{
 	position: absolute;
@@ -94,25 +96,13 @@
 	z-index: 100;
 	left: 5px;
 }
-.myTab{
-	position: fixed;
-	left: 20px;
-	right: 0;
-	bottom: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: white;
-	width: 100%;
-}
-.myTab a{
-	width: 100%;
-     background: white;
-	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+.active{
+	color: red;
 	text-decoration: none;
-	color: black;
 }
+  .notActive{
+    color: #999999;
+    text-decoration: none;
+  }
 </style>

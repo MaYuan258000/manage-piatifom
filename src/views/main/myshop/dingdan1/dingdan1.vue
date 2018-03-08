@@ -1,10 +1,10 @@
 <template>
 	<div class="main_10">
-				<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
+				<img src="../../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
 		<div class="odd">
 			<i class="el-icon-arrow-left" @click="back"></i>
 			<h3 style="margin-left: 6rem;">订单详情</h3>
-			<img src="../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
+			<img src="../../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
 		</div>
 		<div class="fa">
 		 <div class="yuan"></div>
@@ -22,7 +22,7 @@
 		
 		<div class="wu">
 			<dl>
-				<dt><img src="../../../../static/img/rtrtrt_03.jpg" style="width: 7%; margin-left: 1.6rem; margin-top: 1.5rem;"></dt>
+				<dt><img src="../../../../../static/img/rtrtrt_03.jpg" style="width: 7%; margin-left: 1.6rem; margin-top: 1.5rem;"></dt>
 				<dd style="position: relative; top: -2.5rem; left: 1.5rem;">马远 13717800979</dd>
 				<dd style="position: relative; top: -2.5rem;; font-size: 10px; margin-left: 4rem;">地址：山东菏泽曹县东关基督教堂东50米</dd>
 			</dl>
@@ -30,11 +30,11 @@
 		<div class="di">
 			
 			<dl>
-				<img src="../../../../static/img/dingdan_02.jpg" style="width: 100%; position: absolute;">
-				<dt><img src="../../../../static/img/dingdan_05.jpg" style="width: 50%;"></dt>
+				<img src="../../../../../static/img/dingdan_02.jpg" style="width: 100%; position: absolute;">
+				<dt><img src="../../../../../static/img/dingdan_05.jpg" style="width: 50%;"></dt>
 				<dd style="position: relative; top: 1rem;">马远 13717800979</dd>
 				<dd style="position: relative; top: 1rem;; font-size: 10px; margin-left: 4rem;">地址：山东菏泽曹县东关基督教堂东50米</dd>
-				<img src="../../../../static/img/dingdan_02.jpg" style="width: 100%; position: absolute; top: 20rem; left: -0.8rem;">
+				<img src="../../../../../static/img/dingdan_02.jpg" style="width: 100%; position: absolute; top: 20rem; left: -0.8rem;">
 			</dl>
 			
 		</div>

@@ -1,10 +1,10 @@
 <template>
 	<div class="main_9">
-		<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
+		<img src="../../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
 		<div class="odd">
 			<i class="el-icon-arrow-left" @click="back"></i>
 			<h3 style="margin-left: 6rem;">销售统计</h3>
-			<img src="../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
+			<img src="../../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
 		</div>
 		<div class="loginet flexBox">
 			<div class="flex1 center" v-on:click="fistDeng">销售</div>

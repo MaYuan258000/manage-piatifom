@@ -17,7 +17,7 @@
 				<div class="ge">&nbsp;&nbsp;&nbsp;我的余额
 				<div style="margin-left: 190px; margin-top: -55px;color: red;">账户余额：￥{{acount}}</div>
 				</div>
-				<div class="ge1">&nbsp;&nbsp;&nbsp;我的订单</div>
+				<router-link to="/main/userdingdan" style="color: black; text-decoration: none;"><div class="ge1">&nbsp;&nbsp;&nbsp;我的订单</div></router-link>
 			</div>
 		<div class="she">
 				<div class="ge">&nbsp;&nbsp;&nbsp;设置</div>

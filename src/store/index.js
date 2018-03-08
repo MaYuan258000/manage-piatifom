@@ -8,12 +8,15 @@ const store=new Vuex.Store({
 		acount:8000,
 		title:"赵晓双智障",
 		age:23,
+		nane:'Rush.蝴蝶',
+		imgg:'../../../../../static/img/odi_04.jpg',
 		userInfo:{
 			myshopp:{
 				name:'大润发超市'
 			},
 			userName:'mayuan',
 			phone:13717800979,
+			
 		}
 	},
 	mutations:{

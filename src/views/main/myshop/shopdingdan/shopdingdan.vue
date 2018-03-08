@@ -1,26 +1,26 @@
 <template>
 	<div class="main_12">
-		<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
+		<img src="../../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
 		<div class="odd">
 			<i class="el-icon-arrow-left" @click="back"></i>
 			<h3 style="margin-left: 6rem;">订单确认</h3>
-			<img src="../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
+			<img src="../../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
 		</div>
 
 		<div class="di">
 
 			<dl>
-				<dt><img src="../../../../static/img/dingdan_05.jpg" style="width: 40%; margin-left: 1rem;"></dt>
+				<dt><img src="../../../../../static/img/dingdan_05.jpg" style="width: 40%; margin-left: 1rem;"></dt>
 				<dd style="position: relative; top: 1rem; left: 0.8rem;">马远 13717800979</dd>
 				<dd style="position: relative; top: 1rem;; font-size: 10px; margin-left: 4rem;">地址：山东菏泽曹县东关基督教堂东50米</dd>
-				<img src="../../../../static/img/dingdan_02.jpg" style="width: 100%; position: absolute; top: 10rem; left: -0.8rem;">
+				<img src="../../../../../static/img/dingdan_02.jpg" style="width: 100%; position: absolute; top: 10rem; left: -0.8rem;">
 			</dl>
 
 		</div>
 
 		<div class="zong">
 			<div class="zong-top">
-				<img src="../../../../static/img/sdsdsd_18.jpg">
+				<img src="../../../../../static/img/sdsdsd_18.jpg">
 				<p>洋玩易总店</p>
 			</div>
 
@@ -76,14 +76,14 @@
 		data() {
 			return {
 				lid: [{
-						"img": "../../../../static/img/gowu_03.jpg",
+						"img": "../../../../../static/img/gowu_03.jpg",
 						"name": "Metaolic酵母x精华粒 减肥排毒60粒",
 						"price": "￥219.00",
 						"price1": "￥219.00",
 						"an": "保税区"
 					},
 					{
-						"img": "../../../../static/img/gowu_03.jpg",
+						"img": "../../../../../static/img/gowu_03.jpg",
 						"name": "Metaolic酵母x精华粒 减肥排毒60粒",
 						"price": "￥219.00",
 						"price1": "￥219.00",

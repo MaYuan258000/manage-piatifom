@@ -9,7 +9,7 @@
 			<dl>
 				<dt><img src="../../../../../static/img/dswqq_03.jpg" style="width: 60%; margin-left: 0.5rem;"></dt>
 				<dd style="position: relative;right: 1.7rem; color: white; top: -0.5rem;">黑卡卡的店<img src="../../../../../static/img/dswqq_06.jpg" style="width: 10%; margin-left: 0.5rem;"></dd>
-				<dd><router-link to="/main/dianpushezhi"><button class="buu">店铺设置</button></router-link></dd>
+				<dd><router-link to="/dianpushezhi"><button class="buu">店铺设置</button></router-link></dd>
 			</dl>
 			</div>
 			<div class="nav-right">
@@ -29,31 +29,31 @@
 		</div>
 		<div class="xiang">
 			<div class="tou">
-			<div class="xiang-left">
+			<div class="xiang-left" @click="dingdan">
 				<img src="../../../../../static/img/dswqq_15.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">店铺订单</p>
 			</div>
-			<div class="xiang-zhong">
+			<div class="xiang-zhong" @click="huopin">
 					<img src="../../../../../static/img/dswqq_18.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
-				<p style="text-align: center; margin-top: 0.5rem;">货品管理</p>
+				<p style="text-align: center; margin-top: 1rem;">货品管理</p>
 			</div>
-			<div class="xiang-right">
+			<div class="xiang-right" @click="tuiguang">
 				<img src="../../../../../static/img/dswqq_20.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">我要推广</p>
 			</div>
 			</div>
 			<div class="tou">
-			<div class="xiang-left">
+			<div class="xiang-left" @click="dianpusheng">
 				<img src="../../../../../static/img/dswqq_28.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">店铺升级</p>
 			</div>
-			<div class="xiang-zhong">
-					<img src="../../../../../static/img/dswqq_26.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
-				<p style="text-align: center; margin-top: 0.5rem;">红包奖励</p>
+			<div class="xiang-zhong" @click="hongbao">
+					<img src="../../../../../static/img/dswqq_26.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 0.7rem;">
+				<p style="text-align: center; margin-top: 0.2rem;">红包奖励</p>
 			</div>
-			<div class="xiang-right">
-				<img src="../../../../../static/img/dswqq_31.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
-				<p style="text-align: center; margin-top: 0.5rem;">使用帮助</p>
+			<div class="xiang-right" @click="help">
+				<img src="../../../../../static/img/dswqq_31.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 0.7rem;">
+				<p style="text-align: center; margin-top: 0.2rem;">使用帮助</p>
 			</div>
 			</div>
 		</div>
@@ -69,6 +69,26 @@
 		},
 		components:{
 			Topzujian2
+		},
+		methods:{
+			dingdan(){
+				this.$router.push('/userdingdan')
+			},
+			huopin(){
+				this.$router.push('/shopdingdan')
+			},
+			tuiguang(){
+				this.$router.push('/dingdan1')
+			},
+			dianpusheng(){
+				this.$router.push('/dingdan')
+			},
+			hongbao(){
+				this.$router.push('/hongbaojiangli')
+			},
+			help(){
+				this.$router.push('/xiaoshoutongji')
+			}
 		}
 	}
 </script>
@@ -161,7 +181,7 @@
 	}
 	.main_5{
 		width: 100%;
-		height: 40rem;
+		height: 38rem;
 		background: #F3F3F3;
 	}
 </style>

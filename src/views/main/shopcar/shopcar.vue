@@ -67,7 +67,6 @@
 			</div>
 			<div class="li-right"><a href="#">去付款</a></div>
 		</div>
-		<Zong></Zong>
 	</div>
 
 </template>
@@ -239,7 +238,7 @@
 	}
 	.tui{
 		width: 100%;
-		height: 18rem;
+		height: 10rem;
 		background: white;
 		display: flex;
 	}

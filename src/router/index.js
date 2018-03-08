@@ -24,13 +24,21 @@ import Dianpu from '../views/main/myshop/dianpu/dianpu'
 import Dianpushezhi from '../views/main/myshop/dianpushezhi/dianpushezhi'
 import Dianpumingcheng from '../views/main/myshop/dianpumingcheng/dianpumingcheng'
 import Dianpujianjie from '../views/main/myshop/dianpujianjie/dianpujianjie'
+import DianpuID from '../views/main/myshop/dianpuID/dianpuID'
 import Tiyandian from '../views/main/myshop/tiyandian/tiyandian'
-import Xiaoshoutongji from '../views/main/xiaoshoutongji/xiaoshoutongji'
-import Dingdan from '../views/main/dingdan1/dingdan1'
+import Xiaoshoutongji from '../views/main/myshop/xiaoshoutongji/xiaoshoutongji'
+import Dingdan from '../views/main/myshop/dingdan1/dingdan1'
+import Dingdan1 from '../views/main/myshop/dingdan/dingdan'
 import Dizhi from '../views/main/dizhi/dizhi'
 import Shopbianji from '../views/main/shopbianji/shopbianji'
-import Shopdingdan from '../views/main/shopdingdan/shopdingdan'
-
+import Shopdingdan from '../views/main/myshop/shopdingdan/shopdingdan'
+import Yijianfankui from '../views/main/myshop/yijianfankui/yijianfankui'
+import Pingjia from '../views/main/myshop/pingjia/pingjia'
+import Grenziliao from '../views/main/myshop/gerenziliao/gerenziliao'
+import SetPage from '../views/main/myshop/setPage/setPage'
+import Hhongbaojiangli from '../views/main/myshop/hongbaojiangli/hongbaojiangli'
+import Usercenterr from '../views/main/usercenter/username/username'
+import Usercendingdan from '../views/main/usercenter/userdingdan/userdingdan'
 Vue.use(Router)
 
 const routes = [{
@@ -77,71 +85,88 @@ const routes = [{
 				component: Myshop,
 			},
 			{
-				path: '/shopset',
-				component: ShopSet
-			},
-			{
-				path: '/shopname',
-				component: ShopName
-			},
-			{
-				path: 'usercenter',
-				component: Usercenter
-			},
-			{
-				path: 'zhuda',
-				component: Zhuda
-			},
-			{
-				path: 'yueda',
-				component: Yueda
-			},
-			{
-				path: 'jiating',
-				component: Jiating
-			},
-			{
 				path: 'dianpu',
 				component: Dianpu
 			},
 			{
-				path: 'dianpushezhi',
-				component: Dianpushezhi
+				path: 'username',
+				component: Usercenterr
 			},
-			{
-				path: 'dianpumingcheng',
-				component: Dianpumingcheng
-			},
-			{
-				path: 'dianpujianjie',
-				component: Dianpujianjie
-			},
-			{
-				path: 'tiyandian',
-				component: Tiyandian
-			},
-			{
-				path: 'xiaoshoutongji',
-				component: Xiaoshoutongji
-			},
-			{
-				path: 'dingdan1',
-				component: Dingdan
-			},
-			{
-				path: 'dizhi',
-				component: Dizhi
-			},
-			{
-				path: 'shopbianji',
-				component: Shopbianji
-			},
-			{
-				path: 'shopdingdan',
-				component: Shopdingdan
-			}
 		]
 
+	},
+	{
+		path: '/shopset',
+		component: ShopSet
+	},
+	{
+		path: '/shopname',
+		component: ShopName
+	},
+	{
+		path: '/usercenter',
+		component: Usercenter
+	},
+	{
+		path: '/zhuda',
+		component: Zhuda
+	},
+	{
+		path: '/yueda',
+		component: Yueda
+	},
+	{
+		path: '/jiating',
+		component: Jiating
+	},
+
+	{
+		path: '/dianpushezhi',
+		component: Dianpushezhi
+	},
+	{
+		path: '/dianpumingcheng',
+		component: Dianpumingcheng
+	},
+	{
+		path: '/dianpujianjie',
+		component: Dianpujianjie
+	},
+	{
+		path: '/dianpuID',
+		component: DianpuID
+	},
+	{
+		path: '/tiyandian',
+		component: Tiyandian
+	},
+	{
+		path: '/xiaoshoutongji',
+		component: Xiaoshoutongji
+	},
+	{
+		path: '/dingdan1',
+		component: Dingdan
+	},
+	{
+		path: '/dingdan',
+		component: Dingdan1
+	},
+	{
+		path: '/dizhi',
+		component: Dizhi
+	},
+	{
+		path: '/shopbianji',
+		component: Shopbianji
+	},
+	{
+		path: '/shopdingdan',
+		component: Shopdingdan
+	},
+	{
+		path: '/userdingdan',
+		component: Usercendingdan
 	},
 	{
 
@@ -171,6 +196,36 @@ const routes = [{
 
 		path: '/yanzhengma',
 		component: Yanzhengma
+
+	},
+	{
+
+		path: '/hongbaojiangli',
+		component: Hhongbaojiangli
+
+	},
+	{
+
+		path: '/yijianfankui',
+		component: Yijianfankui
+
+	},
+		{
+
+		path: '/pingjia',
+		component: Pingjia
+
+	},
+		{
+
+		path: '/gerenziliao',
+		component: Grenziliao
+
+	},
+	{
+
+		path: '/setPage',
+		component: SetPage
 
 	}
 

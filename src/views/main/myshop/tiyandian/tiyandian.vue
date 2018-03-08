@@ -35,7 +35,7 @@
 			</div>
 			<div class="xiang-zhong">
 					<img src="../../../../../static/img/dswqq_18.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
-				<p style="text-align: center; margin-top: 0.5rem;">货品管理</p>
+				<p style="text-align: center; margin-top: 1rem;">货品管理</p>
 			</div>
 			<div class="xiang-right">
 				<img src="../../../../../static/img/ere_07.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
@@ -48,8 +48,8 @@
 				<p style="text-align: center; margin-top: 0.5rem;">店铺升级</p>
 			</div>
 			<div class="xiang-zhong">
-					<img src="../../../../../static/img/dswqq_26.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
-				<p style="text-align: center; margin-top: 0.5rem;">红包奖励</p>
+					<img src="../../../../../static/img/dswqq_26.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 0.7rem;">
+				<p style="text-align: center; margin-top: 0.2rem;">红包奖励</p>
 			</div>
 			<div class="xiang-right">
 				<img src="../../../../../static/img/ere_11.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
