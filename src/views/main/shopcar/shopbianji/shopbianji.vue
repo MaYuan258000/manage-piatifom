@@ -1,7 +1,7 @@
 <template>
 	<div class="wrapper flexBox flexCol bgwhite3">
-		<Img imgSrc="../../../../static/img/sdsdsd_01.jpg"></Img>
-		<Topzujian1 title='购物车' :isShowArrow="true" :isShowimg="true" :isShowCOlor="true"></Topzujian1>
+		<Img imgSrc="../../../../../static/img/sdsdsd_01.jpg"></Img>
+		<Topzujian1 title='编辑' :isShowArrow="true" :isShowimg="true" :isShowCOlor="true"></Topzujian1>
 
 		<div class="flex1 padding-left padding-right margin-top17 container1 ">
 			<div class="borderBottom margin17">
@@ -59,9 +59,9 @@
 
 <script>
 	import * as echarts from 'echarts'
-	import Img from '../../../components/img'
-	import Topzujian from '../../../components/Topzujian'
-	import Topzujian1 from '../../../components/Topzujian1'
+	import Img from '../../../../components/img'
+	import Topzujian from '../../../../components/Topzujian'
+	import Topzujian1 from '../../../../components/Topzujian1'
 	export default {
 		data() {
 			return {
@@ -71,7 +71,7 @@
 				//             ]
 				cholist: [{
 					isChecked: true,
-					src: "../../../../static/img/gowu_03.jpg",
+					src: "../../../../../static/img/gowu_03.jpg",
 					title: "酵母x精华粒 减肥排毒60粒",
 					price: "219.00",
 					oldPrice: "596.00",
@@ -80,7 +80,7 @@
 				},
 				{
 					isChecked: false,
-					src: "../../../../static/img/gowu_03.jpg",
+					src: "../../../../../static/img/gowu_03.jpg",
 					title: "酵母x精华粒 减肥排毒60粒",
 					price: "219.00",
 					oldPrice: "596.00",
@@ -89,7 +89,7 @@
 				}
 				],
 				tuijian: [{
-					src: "../../../../static/img/gowu_03.jpg",
+					src: "../../../../../static/img/gowu_03.jpg",
 					title: "哈哈哈"
 				}],
 				activeColor:'#ca3232',

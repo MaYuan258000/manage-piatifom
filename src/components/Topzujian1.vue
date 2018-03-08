@@ -1,13 +1,13 @@
 <template>
 	<div class="wrapper flexBox flexCol"> <img src="../../static/img/ddddd_01.jpg" style="width: 100%;" v-if="!isShowimg">
-	<div class="center colorWhite bgwhite topBanner">
-		<div @click="backk">
-			<img src="../../static/img/back.png" class="iconPostion" v-if="!isShowArrow">
+	<div class="center  bgwhite topBanner">
+		<div>
+			<img src="../../static/img/back.png" class="iconPostion colorRed" v-if="!isShowArrow" @click="backk">
 			<div class="fff">
 			<!--<p style="font-size: 16px; margin-right: 70px;" v-if="!isShowArrow">返回
 			</p>-->
 			<span style="margin-left: 0px;" class="center">{{name}}</span>
-			<button class="bbc"><router-link to='/main/shopbianji'>编辑</router-link></button>
+			<button class="bbc" @click="bian">编辑</button>
 			<img src="../../static/img/sdsdsd_04.jpg"class="od">
 			</div>
 		</div>
@@ -26,6 +26,10 @@
 		methods: {
 			backk() {
 				this.$router.go(-1)
+			},
+			bian(){
+		
+				this.$router.push('/shopbianji')
 			}
 		}
 	}
