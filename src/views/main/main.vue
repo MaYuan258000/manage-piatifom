@@ -17,7 +17,7 @@
 			   <div class="flex1  center flexBox flexCol" @click="setIndex(3)">
 			       <img src="../../../static/img/dianpu (2).jpg" class="ww" v-show="currentIndex==3">
 			       <img src="../../../static/img/dianpu.jpg" class="ww" v-show="currentIndex!=3">
-					<router-link class="odd2" to="/main/myshop" >我的店铺</router-link></div>
+					<router-link class="odd2" to="/main/dianpu" >我的店铺</router-link></div>
 			 <div class="flex1  center flexBox flexCol" @click="setIndex(4)">
 			       <img src="../../../static/img/username (2).jpg" class="ww" v-show="currentIndex==4">
 			       <img src="../../../static/img/username.jpg" class="ww" v-show="currentIndex!=4">
@@ -96,9 +96,9 @@
 }
 .myTab{
 	position: fixed;
-	left: 0;
+	left: 20px;
 	right: 0;
-	bottom: 0;
+	bottom: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -108,7 +108,7 @@
 .myTab a{
 	width: 100%;
      background: white;
-	height: 50px;
+	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

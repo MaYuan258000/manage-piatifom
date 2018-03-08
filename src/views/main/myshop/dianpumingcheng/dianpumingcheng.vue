@@ -1,10 +1,9 @@
 <template>
 	<div class="main_7">
-				<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
-		<div class="odd">
-			<h3 style="margin-left: 9rem;">我的店铺</h3>
-			<img src="../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
-		</div>
+	      <Topzujian3
+       	title='店铺名称'
+       	
+       	></Topzujian3>
 		<div class="ming">
 			<input type="text" name="" id="" value=""  placeholder="请输入您的店铺名称" class="inn"/>
 		</div>
@@ -12,6 +11,17 @@
 </template>
 
 <script>
+	import Topzujian3 from '../../../../components/Topzujian3'
+	export default{
+		data(){
+			return{
+				
+			}
+		},
+		components:{
+			Topzujian3
+		}
+	}
 </script>
 
 <style>

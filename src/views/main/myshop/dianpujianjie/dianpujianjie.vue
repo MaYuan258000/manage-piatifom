@@ -1,18 +1,17 @@
 <template>
 		<div class="main_8">
-				<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
-		<div class="odd">
-			<i class="el-icon-arrow-left" @click="back"></i>
-			<h3 style="margin-left: 6rem;">店铺简介</h3>
-			<img src="../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
-		</div>
+	    <Topzujian3
+       	title='店铺简介'
+       	
+       	></Topzujian3>
 		<div class="ming">
-			<textarea type="text" name="" id="" value=""  placeholder="请填写你的店铺简介" class="inn" cols="50" rows="10"/>
+			<input type="text" placeholder="填写你的店铺简介" class="inputd"/>
 		</div>
 	</div>
 </template>
 
 <script>
+		import Topzujian3 from '../../../../components/Topzujian3'
 		export default{
 		data(){
 			return{
@@ -23,11 +22,20 @@
 				back() {
 				history.go(-1)
 			}
-		}
+		},components:{
+			Topzujian3
+		},
 	}
 </script>
 
 <style>
+	::placeholder{
+	}
+	.inputd{
+		width: 100%;
+		border: none;
+		height: 10rem;
+	}
 	.el-icon-arrow-left {
 		font-size: 40px;
 		color: black;
@@ -37,6 +45,7 @@
 		width: 100%;
 		height: 10rem;
 		background: white;
+		border-top: 1px solid red;
 	}
 	.main_8{
 			width: 100%;

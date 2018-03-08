@@ -1,20 +1,19 @@
 <template>
 	<div class="main_5">
-			<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
-		<div class="odd">
-			<h3 style="margin-left: 9rem;">我的店铺</h3>
-			<img src="../../../../static/img/sdsdsd_04.jpg" style="width: 10%; margin-left: 6rem;">
-		</div>
+        			<Topzujian2
+		        title='我的店铺'
+		
+		></Topzujian2>
 		<div class="nav">
 			<div class="nav-left">
 			<dl>
-				<dt><img src="../../../../static/img/dswqq_03.jpg" style="width: 60%; margin-left: 0.5rem;"></dt>
-				<dd style="position: relative;right: 1.7rem; color: white; top: -0.5rem;">黑卡卡的店<img src="../../../../static/img/dswqq_06.jpg" style="width: 10%; margin-left: 0.5rem;"></dd>
+				<dt><img src="../../../../../static/img/dswqq_03.jpg" style="width: 60%; margin-left: 0.5rem;"></dt>
+				<dd style="position: relative;right: 1.7rem; color: white; top: -0.5rem;">黑卡卡的店<img src="../../../../../static/img/dswqq_06.jpg" style="width: 10%; margin-left: 0.5rem;"></dd>
 				<dd><router-link to="/main/dianpujianjie"><button class="buu">店铺设置</button></router-link></dd>
 			</dl>
 			</div>
 			<div class="nav-right">
-				<img src="../../../../static/img/dswqq_09.jpg" style="width: 50%; margin-left: 1.8rem; margin-top: 1.2rem;">
+				<img src="../../../../../static/img/ere_03.jpg" style="width: 50%; margin-left: 1.8rem; margin-top: 1.2rem;">
 			</div>
 		</div>
 		
@@ -31,41 +30,53 @@
 		<div class="xiang">
 			<div class="tou">
 			<div class="xiang-left">
-				<img src="../../../../static/img/dswqq_15.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
+				<img src="../../../../../static/img/dswqq_15.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">店铺订单</p>
 			</div>
 			<div class="xiang-zhong">
-					<img src="../../../../static/img/dswqq_18.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
+					<img src="../../../../../static/img/dswqq_18.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">货品管理</p>
 			</div>
 			<div class="xiang-right">
-				<img src="../../../../static/img/dswqq_20.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
-				<p style="text-align: center; margin-top: 0.5rem;">我要推广</p>
+				<img src="../../../../../static/img/ere_07.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
+				<p style="text-align: center; margin-top: 0.5rem;">分店信息</p>
 			</div>
 			</div>
 			<div class="tou">
 			<div class="xiang-left">
-				<img src="../../../../static/img/dswqq_28.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
+				<img src="../../../../../static/img/dswqq_28.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">店铺升级</p>
 			</div>
 			<div class="xiang-zhong">
-					<img src="../../../../static/img/dswqq_26.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
+					<img src="../../../../../static/img/dswqq_26.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">红包奖励</p>
 			</div>
 			<div class="xiang-right">
-				<img src="../../../../static/img/dswqq_31.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
+				<img src="../../../../../static/img/ere_11.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
+				<p style="text-align: center; margin-top: 0.5rem;">任务奖励</p>
+			</div>
+			
+			</div>
+			<div class="tou">
+			<div class="xiang-left1">
+				<img src="../../../../../static/img/dswqq_31.jpg" style="width: 40%;margin-left: 2.2rem; margin-top: 1rem;">
 				<p style="text-align: center; margin-top: 0.5rem;">使用帮助</p>
 			</div>
+			
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+	import Topzujian2 from '../../../../components/Topzujian2'
 	export default{
 		data(){
 			return{
 			}
+		},
+		components:{
+			Topzujian2
 		}
 	}
 </script>
@@ -96,7 +107,7 @@
 	}
 	.xiang{
 		width: 100%;
-		height: 15rem;
+		height: 20rem;
 		background: white;
 		margin-top: 0.7rem;
 	
@@ -158,7 +169,7 @@
 	}
 	.main_5{
 		width: 100%;
-		height: 40rem;
+		height: 50rem;
 		background: #F3F3F3;
 	}
 </style>

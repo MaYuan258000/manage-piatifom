@@ -1,59 +1,4 @@
 <template>
-	<!--<div class="main_11">
-		<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
-		<div class="odd">
-			<h3 style="margin-left:9rem;">购物车</h3>
-			<button class="bbc"><router-link to="/main/shopbianji">编辑</router-link></button>
-			<img src="../../../../static/img/sdsdsd_04.jpg" style="width: 8%;">
-		</div>
-     <div class="yang">
-     	<input type="checkbox" style="width: 20px; height: 20px; margin-top: 0.8rem; margin-left: 1rem;">
-     	<span style="position: absolute; top: 6rem; left: 3rem;">洋玩易总店</span>
-     </div>
-     <div class="nei_1">
-     	<div class="nei-2" v-for="(item,index) in lid">
-     	<div class="nei-left">
-     		<input type="checkbox" style="width: 20px; height: 20px; margin-top: 3rem; margin-left: 1rem;">
-     	</div>
-     	<div class="nei-zhong">
-     		<img :src="item.img" style="width: 100%;">
-     	</div>
-     	<div class="nei-right">
-     		<h5 style="font-size: 15px; margin-top: -0.2rem; margin-left: 0.7rem;">{{item.name}}</h5>
-     		<p style="margin-top: -1rem; color: #ca3232; margin-left: 0.7rem;">{{item.price}}<s style="color: #DDDDDD;">{{item.price1}}</s></p>
-     		<button style="width: 15%; height:1.8rem; border-radius: 5px 0px 0 5px; background: #f7f7f7; border: none; margin-left: 0.7rem;">-</button>
-     		<input type="text" style="width: 20%;border: none; background: #e6e6e6;width: 30%;height: 1.7rem; margin-top: 0.8rem;" >
-     		<button style="width: 15%; height:1.8rem; border-radius: 0px 5px 5px 0px; background: #e6e6e6; border: none; margin-left: -0.2rem;">+</button>
-     	</div>
-     	</div>
-     </div>
-     		<div class="tuijian">
-			<div class="zuo"></div>
-			<div class="zhong">推荐</div>
-			<div class="you"></div>
-		</div>
-		
-		<div class="tui">
-			<div class="tui-left"><img src="../../../../static/img/gowu_07.jpg" style="width: 100%;">
-			<p>日本MSD 黑玛卡 强肾 滋补 60粒</p>
-			</div>
-			<div class="tui-right"><img src="../../../../static/img/gowu_09.jpg" style="width: 100%;"></div>
-		</div>
-		
-		<div class="li">
-			<div class="li-left">
-				<div class="li-left1">
-				<input type="checkbox" style="width: 20px; height: 20px; margin-top: 1.5rem; margin-left: 1rem;"><span style="color: white; position: absolute; top: 1.4rem; left: 2.6rem;">全选</span>
-				</div>
-				<div class="li-left2">
-				<h3 style="margin-top: 0.5rem; color: white;">合计:￥418.00</h3>
-				<p style="margin-top: -1.2rem; margin-left: 2.2rem; color: #767a97;">(不包含运费)</p>
-				</div>
-			</div>
-			<div class="li-right"><a href="#">去付款</a></div>
-		</div>
-		<Zong></Zong>
-	</div>-->
 	<div class="wrapper flexBox flexCol bgwhite3">
 		<Img imgSrc="../../../../static/img/sdsdsd_01.jpg"></Img>
 		<Topzujian1 title='购物车' :isShowArrow="true" :isShowimg="true" :isShowCOlor="true"></Topzujian1>
@@ -95,21 +40,36 @@
 		 	小计：￥{{allPrice}}
 		 </div>
 		 <div>
-		 	账户余额：￥{{myacount}}
-		 </div>
-		 <div class="flexBox bg odiContanin padding-left padding-right">
-		 	<div class="bgwhite1 center flex2 ">
-		 		     	<div class="checkbox marght-left12" 
-           	    		:style="{background:isCheckedAll?'#ca3232':'#fff'}"
-           	    		@click="checkAllEvent">
-           	    	</div>
-		 		
-		 		<span class="marght-left13">全选</span></div>
-		 	<div class="bgGray colorWhite flex2 center">移至收藏夹</div>
-		 	<div class="bgred colorWhite2 flex2 center" @click="deleteEvent">删除</div>
-		 	<div class="bgred colorWhite2 flex2 center" @click="payEvent">结账</div>
-		 </div>
+     </div>
+     		<div class="tuijian">
+			<div class="zuo"></div>
+			<div class="zhong">推荐</div>
+			<div class="you"></div>
+		</div>
+		
+		<div class="tui">
+			<div class="tui-left"><img src="../../../../static/img/gowu_07.jpg" style="width: 100%;">
+			<p>日本MSD 黑玛卡 强肾 滋补 60粒</p>
+			</div>
+			<div class="tui-right"><img src="../../../../static/img/gowu_09.jpg" style="width: 100%;"></div>
+		</div>
+		
+		<div class="li">
+			<div class="li-left">
+				<div class="li-left1">
+				<input type="checkbox" style="width: 20px; height: 20px; margin-top: 1.5rem; margin-left: 1rem;" :style="{background:isCheckedAll?'#ca3232':'#fff'}"
+           	    		@click="checkAllEvent"><span style="color: white; position: absolute; top: 1.4rem; left: 2.6rem;">全选</span>
+				</div>
+				<div class="li-left2">
+				<h3 style="margin-top: 0.5rem; color: white;">合计:￥{{allPrice}}</h3>
+				<p style="margin-top: -1.2rem; margin-left: 2.2rem; color: #767a97;">(不包含运费)</p>
+				</div>
+			</div>
+			<div class="li-right"><a href="#">去付款</a></div>
+		</div>
+		<Zong></Zong>
 	</div>
+
 </template>
 
 <script>
@@ -231,67 +191,8 @@
 </script>
 
 <style lang="scss" scoped>
-.container1{
-	position: relative;
-}
-.odiContanin{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	
-}
-.all-price-border{
-	height: 50px;
-	width: 100%;
-	border-top: 1px solid #CCCCCC;
-	margin-top: 20px;
-	padding: 20px;
-}
-.checkbox{
-	
-	border: 1px solid #CCCCCC;
-	border-radius: 50%;
-	width: 25px;
-	height: 25px;
-	box-sizing: border-box;
-}
-.checkbox1{
-	
-	border: 1px solid #CCCCCC;
-	border-radius: 50%;
-	width: 25px;
-	height: 25px;
-	box-sizing: border-box;
-}
-.check-container{
-	width: 50px;
-	/*height: 50px;
-	background: red;
-	border-radius: 50%;*/
-	
-}
-.yuan{
-	width: 20px;
-	height: 20px;
-	border-radius: 25px;
-	background: none;
-}
-.img-container{
-	width: 30%;
-	height: 100%;
-}
-.setNum{
-	width: 50px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	display: inline-block;
-	border: 1px solid white;
-	background: #DDDDDD;
-}
-	/*.li-left1{
+
+	.li-left1{
 		width: 50%;
 		height: 4rem;
 	}
@@ -322,8 +223,8 @@
 	.li{
 		width: 100%;
 		height: 4rem;
-		position: fixed;
-		bottom: 42px;
+		position: absolute;
+		top: 38rem;
 		display: flex;
 	}
 	.tui-left{
@@ -438,5 +339,66 @@
 		width: 100%;
 		height: 10rem;
 		background: white;
-	}*/
+	}
+	
+		.container1{
+	position: relative;
+}
+.odiContanin{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	
+}
+.all-price-border{
+	height: 50px;
+	width: 100%;
+	border-top: 1px solid #CCCCCC;
+	margin-top: 20px;
+	padding: 20px;
+}
+.checkbox{
+	
+	border: 1px solid #CCCCCC;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	box-sizing: border-box;
+}
+.checkbox1{
+	
+	border: 1px solid #CCCCCC;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	box-sizing: border-box;
+}
+.check-container{
+	width: 50px;
+	/*height: 50px;
+	background: red;
+	border-radius: 50%;*/
+	
+}
+.yuan{
+	width: 20px;
+	height: 20px;
+	border-radius: 25px;
+	background: none;
+}
+.img-container{
+	width: 30%;
+	height: 100%;
+}
+.setNum{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid white;
+	background: #DDDDDD;
+}
 </style>

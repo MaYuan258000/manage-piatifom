@@ -11,6 +11,8 @@ import Start from '../views/start/start'
 import Main from '../views/main/main'
 import Goshoping from '../views/main/goshoping/goshoping'
 import Myshop from '../views/main/myshop/myshop'
+import ShopSet from '../views/main/myshop/shopset/shopset'
+import ShopName from '../views/main/myshop/shopname/shopname'
 import Shopcar from '../views/main/shopcar/shopcar'
 import Usercenter from '../views/main/usercenter/usercenter'
 import Password from '../views/password/password'
@@ -18,16 +20,17 @@ import Password from '../views/password/password'
 import Zhuda from '../views/main/benzhouzhuda/zhuda'
 import Yueda from '../views/main/benyuezhuda/yueda'
 import Jiating from '../views/main/jiating/jiating'
-import Dianpu from '../views/main/dianpu/dianpu'
-import Dianpushezhi from '../views/main/dianpushezhi/dianpushezhi'
-import Dianpumingcheng from '../views/main/dianpumingcheng/dianpumingcheng'
-import Dianpujianjie from '../views/main/dianpujianjie/dianpujianjie'
-import Tiyandian from '../views/main/tiyandian/tiyandian'
+import Dianpu from '../views/main/myshop/dianpu/dianpu'
+import Dianpushezhi from '../views/main/myshop/dianpushezhi/dianpushezhi'
+import Dianpumingcheng from '../views/main/myshop/dianpumingcheng/dianpumingcheng'
+import Dianpujianjie from '../views/main/myshop/dianpujianjie/dianpujianjie'
+import Tiyandian from '../views/main/myshop/tiyandian/tiyandian'
 import Xiaoshoutongji from '../views/main/xiaoshoutongji/xiaoshoutongji'
 import Dingdan from '../views/main/dingdan1/dingdan1'
 import Dizhi from '../views/main/dizhi/dizhi'
 import Shopbianji from '../views/main/shopbianji/shopbianji'
 import Shopdingdan from '../views/main/shopdingdan/shopdingdan'
+
 Vue.use(Router)
 
 const routes = [{
@@ -71,7 +74,15 @@ const routes = [{
 			},
 			{
 				path: 'myshop',
-				component: Myshop
+				component: Myshop,
+			},
+			{
+				path: '/shopset',
+				component: ShopSet
+			},
+			{
+				path: '/shopname',
+				component: ShopName
 			},
 			{
 				path: 'usercenter',
@@ -166,5 +177,5 @@ const routes = [{
 ]
 export default new Router({
 	routes: routes,
-	linkActiveClass:'active'
+	linkActiveClass: 'active'
 })

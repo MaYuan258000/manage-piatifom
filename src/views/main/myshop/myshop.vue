@@ -1,5 +1,5 @@
 <template>
-	<div class="main_3">
+	<!--<div class="main_3">
 		<img src="../../../../static/img/sdsdsd_01.jpg" style="width: 100%;">
 		<div class="odd">
 			<h3 style="margin-left: 9rem;">申请开店</h3>
@@ -38,24 +38,56 @@
 				<el-form-item prop="passWord">
 					<el-input v-model="myForm.passWord" class="int" placeholder="写点店铺简介吧" />
 				</el-form-item>
-				<router-link to="/main/dingdan"><el-button type="primary" @click="submitForm('thisForm')" class="btnn">开通会员店（￥9.00）</el-button></router-link>
+				<router-link to="/main/dianpu"><el-button type="primary" @click="submitForm('thisForm')" class="btnn">开通会员店（￥9.00）</el-button></router-link>
 			</el-form-item>
 		</el-form>
 
+	</div>-->
+	<div class="flexBox flexCol wrapper">
+		<Topzujian
+			:title='hasInfo?"我的店铺":"申请开店"'
+			:isShowArrow='true'
+			></Topzujian>
+			<div class="flex1 flexBox flexCol" v-if="hasInfo">
+				<div class="flexBox height20 border">
+					<div class="center flex1">
+						<img src=""/>
+					</div>
+					<div class="flex3">
+						<div>{{$store.state.userInfo.myshopp.name}}</div>
+						<div @click="setEvent">店铺设置</div>
+					</div>
+					<div class="colorWhite bgBlack flex1">
+						会员店
+					</div>
+				</div>
+				<div>
+					
+				</div>
+				<div>
+					
+				</div>
+			</div>
+			<div class="flex1" v-if="!hasInfo">
+				申请开店
+			</div>
 	</div>
 </template>
 
 <script>
+	import Img from '../../../components/img'
+	import Topzujian from '../../../components/Topzujian'
+	import Topzujian1 from '../../../components/Topzujian1'
 	export default {
 		data() {
 			return {
+				hasInfo:this.$store.state.userInfo.myshopp,
 				myForm: {
 					name: '',
 					passWord: '',
 					phone:'',
 					shenfen:'',
-					dianpu:''
-					
+					dianpu:'',
 				},
 				dialogVisible: false,
 				rules: {
@@ -102,12 +134,23 @@
 			},
 			resetForm(formName) {
 				this.$refs[formName].resetFields();
+			},
+			setEvent(){
+				this.$router.push('/shopset')
 			}
-		}
+		},
+			components: {
+			Topzujian,
+			Img,
+			Topzujian1
+		},
 	}
 </script>
 
 <style scoped>
+	.bgBlack{
+		background: #000000;
+	}
 	::placeholder {}
 	
 	.xian {

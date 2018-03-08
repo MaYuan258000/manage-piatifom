@@ -7,7 +7,7 @@
 			<!--<p style="font-size: 16px; margin-right: 70px;" v-if="!isShowArrow">返回
 			</p>-->
 			<span style="margin-left: 0px;" class="center">{{name}}</span>
-			<button class="bbc">编辑</button>
+			<button class="bbc"><router-link to='/main/shopbianji'>编辑</router-link></button>
 			<img src="../../static/img/sdsdsd_04.jpg"class="od">
 			</div>
 		</div>

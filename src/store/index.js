@@ -7,7 +7,14 @@ const store=new Vuex.Store({
 	state:{
 		acount:8000,
 		title:"赵晓双智障",
-		age:23
+		age:23,
+		userInfo:{
+			myshopp:{
+				name:'大润发超市'
+			},
+			userName:'mayuan',
+			phone:13717800979,
+		}
 	},
 	mutations:{
 		checkout(state,pay){
@@ -15,6 +22,9 @@ const store=new Vuex.Store({
 		},
 	  setAge(state,age){
 	  	state.age=age
+	  },
+	  changeShopName(state,name){
+	  	state.userInfo.myshop.name=name
 	  }
 	},
 	actions:{
