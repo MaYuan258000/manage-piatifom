@@ -2,7 +2,7 @@
 	<div class="zhu">
 		<img src="../../../../static/img/dddddddwww_01.jpg" style="width: 100%;">
 			<div class="odd">
-				<button class="buu">返回</button>
+				<button class="buu" @click="backk">返回</button>
 				<h3 style="margin-right: 4rem; color: white;">本周主打</h3>
 		       <img src="../../../../static/img/dddddddwww_06.jpg" style="width: 10%;">
 		</div>

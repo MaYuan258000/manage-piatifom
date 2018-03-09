@@ -17,6 +17,16 @@ import Shopcar from '../views/main/shopcar/shopcar'
 import Usercenter from '../views/main/usercenter/usercenter'
 import Password from '../views/password/password'
 
+import Xinpin from '../views/main/goshoping/xinpin/xinpin'
+import Paidu from '../views/main/goshoping/paidu/paidu'
+import Jianfei from '../views/main/goshoping/jianfei/jianfei'
+import Nanshi from '../views/main/goshoping/nanshi/nanshi'
+import Xinxieguan from '../views/main/goshoping/xinxieguan/xinxieguan'
+import Nvshi from '../views/main/goshoping/nvshi/nvshi'
+import Yundong from '../views/main/goshoping/yundong/yundong'
+import Jingpin from '../views/main/goshoping/jingpin/jingpin'
+
+
 import Zhuda from '../views/main/benzhouzhuda/zhuda'
 import Yueda from '../views/main/benyuezhuda/yueda'
 import Jiating from '../views/main/jiating/jiating'
@@ -226,6 +236,54 @@ const routes = [{
 
 		path: '/setPage',
 		component: SetPage
+
+	},
+	{
+
+		path: '/xinpin',
+		component: Xinpin
+
+	},
+	{
+
+		path: '/paidu',
+		component: Paidu
+
+	},
+	{
+
+		path: '/jianfei',
+		component: Jianfei
+
+	},
+	{
+
+		path: '/nanshi',
+		component: Nanshi
+
+	},
+	{
+
+		path: '/nvshi',
+		component: Nvshi
+
+	},
+	{
+
+		path: '/xinxieguan',
+		component: Xinxieguan
+
+	},
+	{
+
+		path: '/yundong',
+		component: Yundong
+
+	},
+	{
+
+		path: '/jingpin',
+		component: Jingpin
 
 	}
 

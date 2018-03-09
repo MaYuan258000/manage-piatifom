@@ -2,7 +2,7 @@
 	<div class="zhu">
 		<img src="../../../../static/img/d2_01.jpg" style="width: 100%;">
 			<div class="odd">
-				<button class="buu">返回</button>
+				<button class="buu" @click="buu">返回</button>
 				<h3 style="margin-right: 4rem; color: white;">本月主打</h3>
 		       <img src="../../../../static/img/er_03.jpg" style="width: 10%;">
 		</div>

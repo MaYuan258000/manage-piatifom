@@ -18,14 +18,14 @@
 		</div>
 		<div class="goShop_type">
 
-			<div v-for="(item,index) in typelist" class="typeBOx">
+			<div v-for="(item,index) in typelist" class="typeBOx" @click="listEvent1(index)" :index="index">
 				<img :src="item.img" style="width: 70%;">
 				<p style="background: white;">{{item.typeName}}</p>
 			</div>
 		</div>
 		<div class="goShop_week flexBox flexCol">
 			<div class="title">
-				<router-link to='/main/zhuda'>本周主打
+				<router-link to='/zhuda' class='yu'>本周主打
 					<div class="more">更多主打</div>
 				</router-link>
 			</div>
@@ -69,7 +69,7 @@
 		</div>
 		<div class="goShop_month">
 			<div class="title">
-				<router-link to='/main/yueda'>本月主打
+				<router-link to='/yueda' class="yu">本月主打
 					<div class="more">更多好货</div>
 				</router-link>
 			</div>
@@ -122,7 +122,7 @@
 		</div>
 		<div class="jiating">
 			<div class="title" style="color: #2faeff; border-bottom: 1px solid #DDDDDD;">
-				<router-link to='/main/jiating'>家庭套餐
+				<router-link to='/jiating' class="yu">家庭套餐
 					<div class="more">更多实惠</div>
 				</router-link>
 			</div>
@@ -175,7 +175,7 @@
 				<span style="position: relative; left: 18.7rem; top: -1rem; color: #DDDDDD;"><s>{{item.price1}}</s></span>
 			</div>
 		</div>
-	
+
 	</div>
 </template>
 
@@ -276,7 +276,7 @@
 					}
 
 				],
-				weekList:[]
+				weekList: []
 			}
 		},
 		created() {
@@ -290,8 +290,8 @@
 			 * */
 			getData: function() {
 				var _this = this;
-		
-//				console.log('123',obj)
+
+				//				console.log('123',obj)
 				goodlist.then(function(value) {
 					console.log(value);
 					var bannerList = value.data.bannerList;
@@ -299,11 +299,11 @@
 					_this.dealBannerList(bannerList);
 				})
 			},
-			weekData:function(){
-				var _this=this;
-				weeklist.then((res)=>{
-					
-					this.weekList=res.data.weekRecommend
+			weekData: function() {
+				var _this = this;
+				weeklist.then((res) => {
+
+					this.weekList = res.data.weekRecommend
 				})
 			},
 			dealBannerList(bannerList) {
@@ -318,12 +318,43 @@
 					}
 				}
 				this.imgList = imgList
+			},
+			goToNext(path) {
+				this.$router.push(path)
+			},
+			listEvent1(index) {
+			
+				if(index == 0) {
+					this.goToNext('/xinpin')
+				} else if(index == 1) {
+					this.goToNext('/paidu')
+				} else if(index == 2) {
+					this.goToNext('/jianfei')
+				} else if(index == 3) {
+					this.goToNext('/nvshi')
+				}else if(index == 4) {
+					this.goToNext('/yundong')
+				}else if(index == 5) {
+					this.goToNext('/xinxieguan')
+				}else if(index == 6) {
+					this.goToNext('/nanshi')
+				}else if(index == 7) {
+					this.goToNext('/jingpin')
+				}
+			},
+			nameEvent() {
+				this.$router.push('/dianpumingcheng')
 			}
 		}
 	}
 </script>
 
 <style scoped>
+	.yu {
+		color: black;
+		text-decoration: none;
+	}
+	
 	.box {
 		width: 100%;
 		height: 15rem;
